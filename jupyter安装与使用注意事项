@@ -1,0 +1,5 @@
+首先先去官网下载annaconda，其包含了jupyter note
+千万不要直接打开annaconda目录下的jupyter note，因为此时打开的jupyter note是在全局环境下的，所在的目录下有很多文件
+打开pycharm，新建一个项目，并找到该项目的文件所在目录，在该项目所在目录下，windows右键打开终端，例如，在我这里就显示PS C:\Users\h2220\PycharmProjects\Example>此时还不是在虚拟环境下。此时在终端输入 venv\Scripts\activate（这是我新建项目下的一个子文件venv中的子文件Scripts下的一个文件activate.bat），按下enter，便出现(venv) PS C:\Users\h2220\PycharmProjects\Example>`说明，你已经处于虚拟环境中【deactivate 是推出虚拟环境的指令】
+接下来便是在虚拟环境中下载包以及插件，如使用该命令 pip install jupyter -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com可以下载jupyter 这个包
+下载完毕之后，可以在该环境下运行jupyter notebook，则可以跳出jupyter notebook的页面
