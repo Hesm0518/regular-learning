@@ -22,3 +22,14 @@ estimator = KNeighborsClassifier(n_neighbors=2)
 estimator.fit(x, y)
 #模型预测
 print(estimator.predict([[100]]))
+
+'''
+
+欧氏距离  d = sqrt{(x1-x2)^2+(y1-y2)^2}
+曼哈顿距离  d = |x1-x2|+|y1-y2|
+切比雪夫距离 d = max(|x1-x2|,|y1-y2|)
+标准欧氏距离： 
+    标准化变量：x* = (x-m)/s   m为样本集x的均值 s为标准差
+    标准化欧氏距离公式：d = aqrt{[(x1-x2)/Sx]^2 + [(y1-y2)/Sy]^2}
+余弦距离  d = (x1*x2+y1*y2)/(sqrt(x1^2+y1^2) + sqrt(x2^2+y2^2))
+'''
